@@ -1,6 +1,6 @@
 public class BodyMassIndexService {
-    int calculate (int weight, int height) {
-        int index = weight / (height * height / 10_000);
+    int calculate (int weight, int heightSm) {
+        int index = weight / (heightSm * heightSm / 10_000); // делим на 10_000, чтобы перейти из см2 в м2
         return index;
     }
 }
